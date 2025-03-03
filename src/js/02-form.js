@@ -13,8 +13,7 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     const email = form.elements.email.value;
     const message = form.elements.message.value;
-    console.log(email);
-    console.log(message);
+    console.log({email, message});
     form.reset();
     localStorage.removeItem("feedback-form-state");
 });
